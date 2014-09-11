@@ -11,7 +11,8 @@ package Codigo;
  * @author Santiago Vergara
  */
 public class listaautos {
-    private static final autos[] datos = new autos[9];
+    public static final autos[] datos = new autos[9];
+    public static Object[] autos;
     
     public static boolean addautos(autos p){
         for (int i=0; i<datos.length;i++){

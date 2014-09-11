@@ -7,6 +7,8 @@
 package Interfaz;
 
 import Codigo.Relojcaja;
+import Codigo.autos;
+import Codigo.listaautos;
 import javax.swing.JLabel;
 
 /**
@@ -42,7 +44,7 @@ public class caja extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
+        txtbuscador = new javax.swing.JTextField();
         jTextField2 = new javax.swing.JTextField();
         jTextField3 = new javax.swing.JTextField();
         jTextField4 = new javax.swing.JTextField();
@@ -72,6 +74,11 @@ public class caja extends javax.swing.JFrame {
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/buscar.png"))); // NOI18N
         jButton1.setText("Buscar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jTextField2.setEditable(false);
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
@@ -152,7 +159,7 @@ public class caja extends javax.swing.JFrame {
                 .addGap(40, 40, 40)
                 .addComponent(jLabel1)
                 .addGap(18, 18, 18)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(txtbuscador, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jButton1)
                 .addGap(108, 108, 108)
@@ -170,7 +177,7 @@ public class caja extends javax.swing.JFrame {
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel1)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(txtbuscador, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(lblFecha, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(6, 6, 6)
@@ -224,6 +231,17 @@ public class caja extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField3ActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        autos[] listaAux = listaautos.getLista();
+        for (int i = 0; i < listaAux.length; i++) {
+            if (listaAux[i] != null){
+                if (listaAux[i].getPatente().equals(txtbuscador.getText())) {
+                    jTextField2.setText(listaAux[i].getEntrada());
+            }
+            }
+        }
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -269,7 +287,6 @@ public class caja extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
@@ -279,6 +296,7 @@ public class caja extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField8;
     private javax.swing.JLabel lblFecha;
     private javax.swing.JLabel lblHora;
+    private javax.swing.JTextField txtbuscador;
     // End of variables declaration//GEN-END:variables
     public JLabel getLblFecha() {
         return lblFecha;
