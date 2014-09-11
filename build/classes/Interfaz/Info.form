@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jScrollPane1" alignment="1" pref="459" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jScrollPane1" alignment="0" pref="262" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="jTextArea1">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="rows" type="int" value="5"/>
+            <Property name="text" type="java.lang.String" value="&#x9;          INFORMACION&#xa;&#xa;Softparking haes un software que sirve como herramienta&#xa;para los trabajadores de las payas de estacionamiento.&#xa;&#xa;&#xbf;C&#xf3;mo funciona?&#xa;&#xa;En la ventana principal tenemos botones para seleccionar&#xa;que tipo de vehiculo esta ingresando, abajo hay que&#xa;ingresar los datos de este vehiculo y darle click al boton&#xa;de aceptar.&#xa;Debajo tenemos el boton de estacionamiento, el de caja&#xa;y el de los usuarios&#xa;Para ver que autos se encuentran en la paya clickeamos&#xa;en el boton de estacionamiento. Nos apareceran todos&#xa;los autos cargados y para ver cual es la patente y el&#xa;cliente de este auto debemos se&#xf1;alar con el mouse&#xa;dicho auto.&#xa;Cuando un auto se retira, hay que apretar el boton de caja&#xa;en donde hay un buscador donde ingresaremos la patente&#xa;y le damos click en el boton de buscar. Cuando encuentre&#xa;el auto nos dira la fecha y hora de entrada y la de salida,&#xa;nos dira el tiempo transcurrido, la cantidad de horas conta-&#xa;bilizadas, el monto a pagar (que seria la cantidad de horas&#xa;multiplicado por el precio de la hora). Por ultimo nos dira&#xa;el monto a pagar, ingresamos con cuanto paga y automa-&#xa;ticamente nos dira el vuelto. Le damos a aplicar y el auto&#xa;se eliminar&#xe1; de la playa de estaconamiento.&#xa;&#xa;Informaci&#xf3;n del programador&#xa;&#xa;Santiago Vergara&#xa;Instituto Tecnico Salesiano Villada&#xa;C&#xf3;rdoba, Argentina&#xa;Para mas informacion y/o detalles contactar a :&#xa;santivergara.27@gmail.com"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
