@@ -29,6 +29,7 @@ public class menu extends javax.swing.JFrame {
         setTitle("Menu Principal");
         setResizable(false);
         Reloj relojito = new Reloj(0,0,0,0,this);
+        jTextField5.setText("8");
                 
     }
     private estacionamiento est=new estacionamiento();
@@ -372,6 +373,7 @@ public class menu extends javax.swing.JFrame {
                         auto.setEntrada(reloj.devolverHora()+"--"+reloj.devolverFecha());
                         javax.swing.Icon icono = new javax.swing.ImageIcon(getClass().getResource(imagen));
                         est.getjLabel1().setIcon(icono);
+                        jTextField5.setText("7");
                                 
                     } else if (listaautos.getLista()[2]==null){
                         est.setjLabel2(txtcliente.getText(), txtpatente.getText());
@@ -389,6 +391,8 @@ public class menu extends javax.swing.JFrame {
                         auto.setEntrada(reloj.devolverHora()+"--"+reloj.devolverFecha());
                         javax.swing.Icon icono = new javax.swing.ImageIcon(getClass().getResource(imagen));
                         est.getjLabel2().setIcon(icono);
+                        jTextField5.setText("6");
+
                         
                     } else if (listaautos.getLista()[3]==null){
                         est.setjLabel3(txtcliente.getText(), txtpatente.getText());
@@ -406,6 +410,7 @@ public class menu extends javax.swing.JFrame {
                         auto.setEntrada(reloj.devolverHora()+"--"+reloj.devolverFecha());
                         javax.swing.Icon icono = new javax.swing.ImageIcon(getClass().getResource(imagen));
                         est.getjLabel3().setIcon(icono);
+                        jTextField5.setText("5");
                                 
                     } else if (listaautos.getLista()[4]==null){
                         est.setjLabel4(txtcliente.getText(), txtpatente.getText());
@@ -423,6 +428,7 @@ public class menu extends javax.swing.JFrame {
                         auto.setEntrada(reloj.devolverHora()+"--"+reloj.devolverFecha());
                         javax.swing.Icon icono = new javax.swing.ImageIcon(getClass().getResource(imagen));
                         est.getjLabel4().setIcon(icono);
+                        jTextField5.setText("4");
                         
                     } else if (listaautos.getLista()[5]==null){
                         est.setjLabel5(txtcliente.getText(), txtpatente.getText());
@@ -440,6 +446,7 @@ public class menu extends javax.swing.JFrame {
                         auto.setEntrada(reloj.devolverHora()+"--"+reloj.devolverFecha());
                         javax.swing.Icon icono = new javax.swing.ImageIcon(getClass().getResource(imagen));
                         est.getjLabel5().setIcon(icono);
+                        jTextField5.setText("3");
                         
                     } else if (listaautos.getLista()[6]==null){
                         est.setjLabel6(txtcliente.getText(), txtpatente.getText());
@@ -457,6 +464,7 @@ public class menu extends javax.swing.JFrame {
                         auto.setEntrada(reloj.devolverHora()+"--"+reloj.devolverFecha());
                         javax.swing.Icon icono = new javax.swing.ImageIcon(getClass().getResource(imagen));
                         est.getjLabel6().setIcon(icono);
+                        jTextField5.setText("2");
                         
                     } else if (listaautos.getLista()[7]==null){
                         est.setjLabel7(txtcliente.getText(), txtpatente.getText());
@@ -474,6 +482,7 @@ public class menu extends javax.swing.JFrame {
                         auto.setEntrada(reloj.devolverHora()+"--"+reloj.devolverFecha());
                         javax.swing.Icon icono = new javax.swing.ImageIcon(getClass().getResource(imagen));
                         est.getjLabel7().setIcon(icono);
+                        jTextField5.setText("1");
                         
                     } else if (listaautos.getLista()[8]==null){
                         est.setjLabel8(txtcliente.getText(), txtpatente.getText());
@@ -490,7 +499,8 @@ public class menu extends javax.swing.JFrame {
                         }
                         auto.setEntrada(reloj.devolverHora()+"--"+reloj.devolverFecha());
                         javax.swing.Icon icono = new javax.swing.ImageIcon(getClass().getResource(imagen));
-                        est.getjLabel8().setIcon(icono);}
+                        est.getjLabel8().setIcon(icono);
+                        jTextField5.setText("0");}
                                    
                 txtpatente.setText("");
                 txtcliente.setText("");
@@ -514,6 +524,7 @@ public class menu extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
+        
         
     }//GEN-LAST:event_jTextField5ActionPerformed
 
